@@ -34,6 +34,17 @@ $background-opactiy: 0.9;
   }
 }
 
+
+// Set text color - unused function
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
+
 html {
   font-size: 10px;
 }
