@@ -17,9 +17,24 @@
     align-items: center;
     text-align: center;
 
+    .dot {
+      height: 10px;
+      width: 10px;
+    }
+    .text_cursor_blinker {
+      height: 15px !important;
+    }
+
     .lg-heading {
+      font-size: 8rem !important;
       line-height:  1;
       margin-bottom: 1rem;
+    }
+    .sm-heading {
+      font-size: 1.5rem !important;
+    }
+    .text_cursor_blinker { 
+      height: 30px;
     }
   }
   ul.menu-nav, div.menu-branding {
@@ -32,15 +47,15 @@
   }
   .menu-nav {
     height: 75vh;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     font-size: 24px;
   }
   .menu-branding {
     height: 25vh;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
 
     .portrait {
-      background: url('../img/portrait_small.jpg');
+      background: url('../img/wm_portrait_sm.jpg');
       width: 150px;
       height: 150px;
     }
@@ -52,6 +67,5 @@
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
-
   }
 }
