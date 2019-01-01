@@ -76,6 +76,9 @@ header {
 .text-secondary {
   color: $secondary-color;
 }
+.about-secondary {
+  color: $about-secondary-color;
+}
 
 main {
   padding: 4rem;
@@ -108,7 +111,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 
-  'bioimage bio bio'
+  'bio bio bioimage'
   'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   .bio-image {
@@ -116,11 +119,37 @@ main {
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    
+    &.about-bio {
+      border: $about-secondary-color 3px solid;
+    }
   }
   
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+
+    ul.skills-list {
+      text-align: left;
+    }
+  }
+
+  .job {
+    position: relative;
+    .work-img {
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      right: 0;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+    h6 {
+      font-size: 1.17rem;
+    }
+    border-radius: 20px;
   }
   
   .job-1 {
@@ -136,8 +165,10 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $about-secondary-color 5px solid;
+    opacity: 0.8;
   }
+
 }
 
 #main-footer {
@@ -147,8 +178,10 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
-// Want to create a sticky footer 
 
+h1.lg-heading.white-txt {
+  color: white;
+}
 
 
 

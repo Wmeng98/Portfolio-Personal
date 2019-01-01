@@ -13,9 +13,19 @@
 // Tablets & Small Laptops
 
 @include mediaMd {
+
   main {
     align-items: center;
     text-align: center;
+
+    .bio {
+      .skill-ls {
+        .sk-ls {
+          text-align: left !important;
+        }
+      }
+    }
+
 
     .dot {
       height: 10px;
