@@ -179,9 +179,59 @@ main {
   height: 60px;
 }
 
+// About 
+
 h1.lg-heading.white-txt {
   color: white;
 }
+
+.center-txt {
+  text-align: center;
+}
+
+// Work & Project
+
+.project-info {
+  display: grid;
+  grid-gap: 0.65rem;
+  grid-template-columns: repeat(3, 1fr);
+  
+  img {
+    width: 100%;
+    opacity: 0.6;
+  }
+  .imgBox {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden !important;
+    border: 3px white solid;
+  }
+  .imgBox:hover  {
+    border-color: $projects-secondary-color;
+    img {
+      transform: scale(1.2);
+      opacity: 1;
+      @include easeOut;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $projects-secondary-color;
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color , 50);
+  color: white;
+}
+
 
 
 
