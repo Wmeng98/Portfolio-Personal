@@ -199,8 +199,11 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    padding: 0.2rem 1rem; }
+  h1.sm-heading.landing, h2.sm-heading.landing, h3.sm-heading.landing {
+    background: rgba(192, 149, 149, 0.5); }
+  h1.sm-heading.h3-font-sm, h2.sm-heading.h3-font-sm, h3.sm-heading.h3-font-sm {
+    font-size: 2rem; }
 
 a {
   color: #fff;
@@ -342,7 +345,8 @@ h1.lg-heading.white-txt {
   .boxes .float {
     animation-name: floating-box;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; }
+    animation-timing-function: ease-in-out;
+    border-radius: 20px; }
   .boxes .f-delay1 {
     animation-duration: 2s; }
   .boxes .f-delay2 {
@@ -378,7 +382,7 @@ h1.lg-heading.white-txt {
       line-height: 1;
       margin-bottom: 1rem; }
     main .sm-heading {
-      font-size: 1.5rem !important; }
+      font-size: 1.2rem !important; }
     main .text_cursor_blinker {
       height: 30px; }
   ul.menu-nav, div.menu-branding {

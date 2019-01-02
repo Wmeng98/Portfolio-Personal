@@ -58,8 +58,14 @@ h1, h2, h3 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
   }
+  &.sm-heading.landing {
+    background: rgba(lighten($sm-heading-color, 2), 0.5);
+  }
+  &.sm-heading.h3-font-sm {
+    font-size: 2rem;
+  }
+
 }
 
 a {
@@ -272,6 +278,7 @@ h1.lg-heading.white-txt {
     animation-name: floating-box;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    border-radius: 20px;;
   }
   .f-delay1 {
     animation-duration: 2s;
