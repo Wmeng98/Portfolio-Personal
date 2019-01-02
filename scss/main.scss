@@ -124,6 +124,12 @@ main {
       border: $about-secondary-color 3px solid;
     }
   }
+  .about-secondary {
+    font-size: 2.5rem;
+  }
+  p, li {
+    font-size: 1.5rem;
+  }
   
   .bio {
     grid-area: bio;
@@ -144,10 +150,13 @@ main {
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
     h6 {
-      font-size: 1.17rem;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
     }
     border-radius: 20px;
   }
@@ -214,6 +223,10 @@ h1.lg-heading.white-txt {
       @include easeOut;
     }
   }
+
+  .fab.fa-github {
+    font-size: 2rem;
+  }
 }
 
 .btn {
@@ -232,6 +245,27 @@ h1.lg-heading.white-txt {
   color: white;
 }
 
+// Contact
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1.1rem;
+
+  div {
+    font-size: 2.3rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+    }
+  }
+}
 
 
 

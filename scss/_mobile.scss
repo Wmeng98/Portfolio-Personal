@@ -1,9 +1,6 @@
 // Widescreens
 
 @include mediaXl {
-  .project-info {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 // Desktops & Laptops 
