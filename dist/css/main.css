@@ -92,6 +92,15 @@ html {
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+/* project panel styling */
+.item {
+  margin-bottom: 30px; }
+
+.custom-project-panel {
+  width: auto;
+  background-color: black;
+  color: white; }
+
 .dot {
   height: 15px;
   width: 15px;
