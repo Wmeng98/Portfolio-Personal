@@ -101,6 +101,13 @@ html {
   background-color: black;
   color: white; }
 
+/* BIO */
+.bio-background {
+  padding: 1rem;
+  opacity: 0.8;
+  background-color: #444;
+  border-radius: 20px; }
+
 .dot {
   height: 15px;
   width: 15px;
